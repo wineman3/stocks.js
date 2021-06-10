@@ -10,3 +10,5 @@
 
 An example result:
 `{ '1. open': '416.4500', '2. high': '418.6950', '3. low': '410.5800', '4. close': '417.1300', '5. volume': '17357722' }`
+
+- Wanted to get a feel for passing in cli params and some stock api experience. Maybe more to come here?
