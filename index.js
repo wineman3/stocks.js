@@ -6,9 +6,7 @@ const rootURL = "https://www.alphavantage.co/query";
   let counter = 0;
   tickers = tickers.filter((ticker, index) => tickers.indexOf(ticker) == index); //remove duplicates
   if (process.argv[2]) {
-    if (!process.argv[3])
-      tickers = tickers.slice(tickers.indexOf(process.argv[2]) + 1);
-    else tickers = [tickers[tickers.indexOf(process.argv[2])]];
+    tickers = [process.argv[2]]; // Only process the specified ticker
   }
   try {
     for (ticker of tickers) {
